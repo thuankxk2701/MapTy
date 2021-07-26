@@ -1,0 +1,86 @@
+$xanhdam: #2c3e50;
+$mau_word: #2c3e50;
+$maulogo: #1abc9c;
+$font_word: "lato", sans-serif;
+$word_small: 13px;
+$word_big: 14px;
+$word_menu: 15px;
+$topheight: 50px;
+$color_word: white;
+$color_knot: #21303f;
+body {
+  font-family: $font_word;
+}
+.top {
+  height: $topheight;
+  line-height: $topheight;
+  background-color: $xanhdam;
+  color: $color_word;
+  .top_language {
+    position: relative;
+    // &:hover {
+    //   .languages {
+    //     opacity: 1;
+    //     visibility: visible;
+    //     top: 50px;
+    //   }
+    // }
+    b {
+      font-size: $word_big;
+      cursor: pointer;
+    }
+    .languages {
+      // opacity: 0;
+      // transition: 0.4s;
+      // visibility: hidden;
+      position: absolute;
+      width: 100px;
+      top: 49px;
+      background-color: $xanhdam;
+      a {
+        display: block;
+        padding: 5px 10px;
+        color: $color_word;
+        font-size: $word_small;
+        line-height: 1.7;
+        text-align: center;
+        font-weight: normal;
+      }
+    }
+  }
+  // end top languages
+  .right {
+    .knot {
+      display: inline;
+      a.btn {
+        font-size: $word_small;
+        color: $color_word;
+        background-color: $color_knot;
+        height: 30px;
+        padding: auto 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 16px;
+        i {
+          padding-right: 7px;
+        }
+      }
+    }
+    .caclink {
+      display: inline;
+      ul {
+        display: inline;
+        li {
+          display: inline;
+          list-style: none;
+          a {
+            color: $color_word;
+            font-size: $word_small;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@import "btmobile";
